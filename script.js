@@ -25,7 +25,7 @@ function colorTimeblock() {
         if (currentHour < timeblockHour) {
             $(this).children(".description").addClass("future");
         }
-        else if (currentHour === timeblockHour) {
+        else if (currentHour == timeblockHour) {
             $(this).children(".description").addClass("present");
         }
         else {
