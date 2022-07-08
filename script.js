@@ -20,7 +20,6 @@ function colorTimeblock() {
     var currentHour = moment().hour();
     $(".container").children().each(function() {
         var timeblockHour =  $(this).children(".hour")[0].id;
-        console.log(timeblockHour);
 
         if (currentHour < timeblockHour) {
             $(this).children(".description").addClass("future");
